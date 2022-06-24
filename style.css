@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #06bcfb, #4884ee);
+}
+
+.icons {
+  font-size: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.links {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.371);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+i {
+  padding: 20px;
+}
+
+.icons, .links, i {
+  transition: color .1s ease;
+}
+
+.github:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(45deg, rgb(111, 0, 255), rgb(0, 234, 255));
+  color: white;
+  animation: gh 1s ease-in infinite;
+}
+
+.facebook:hover {
+  transform: translateY(-10px);
+  background: #3b5998;
+  color: white;
+  animation: fb 1s ease-in-out infinite;
+}
+
+.twitter:hover {
+  transform: translateY(-10px);
+  background: #00acee;
+  color: white;
+  animation: tt 1s ease-in-out infinite;
+}
+
+.instagram:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(135deg, #515BD4, #8134af, #dd2a7b, #feda77, #f58529);
+  color: white;
+  animation: insta 1s ease-in-out infinite;
+}
+
+@keyframes gh {
+  0% {
+    box-shadow: 1px 1px 10px rgb(0, 234, 255)
+  }
+
+  50% {
+    box-shadow: 1px 1px 10px rgb(111, 0, 255);
+  }
+
+  to {
+    box-shadow: 1px 1px 10px rgb(0, 234, 255)
+  }
+  
+}
+
+@keyframes fb {
+  0% {
+    box-shadow: 1px 1px 10px #ffffff;
+  }
+
+  50% {
+    box-shadow: 1px 1px 10px #1100ff;
+  }
+
+  to {
+    box-shadow: 1px 1px 10px #ffffff;
+  }
+}
+
+@keyframes tt {
+  0% {
+    box-shadow: 1px 1px 10px #ffffff;
+  }
+
+  50% {
+    box-shadow: 1px 1px 10px #00eaff;
+  }
+
+  to {
+    box-shadow: 1px 1px 10px #ffffff;
+  }
+}
+
+@keyframes insta {
+  0% {
+    box-shadow: 1px 1px 10px #515BD4, -1px -1px 10px #8134af;
+  }
+
+  50% {
+    box-shadow: 1px 1px 10px #dd2a7b, -1px -1px 10px #feda77;
+  }
+
+  to {
+    box-shadow: 1px 1px 10px #515BD4, -1px -1px 10px #8134af;
+  }
+}
